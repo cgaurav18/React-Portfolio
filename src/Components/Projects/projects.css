@@ -1,0 +1,53 @@
+.projects
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 160vh;
+    margin-top: -63vh;
+    margin-bottom: -43vh;
+}
+
+.my{
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+
+.pro
+{
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    .projects{
+    position: relative;
+    top: 48rem;
+    }
+
+    .p1{
+        top: 0rem;
+        left: -9rem!important;
+    }
+
+    .p2{
+        top: 26rem;
+    }
+    .p3{
+        top: 52rem;
+    left: -9rem!important;
+    }
+    
+    .projects{
+        animation: 0s!important;
+    }
+    
+}
+
+
