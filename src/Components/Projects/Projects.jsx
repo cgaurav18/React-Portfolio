@@ -1,7 +1,7 @@
 import React from 'react'
 import './projects.css'
 import candidate from './../../img/candidate.jpg'
-import doc from './../../img/doc.jpg'
+import doc from './../../img/doc.png'
 import inv from './../../img/inv.png'
 import { useContext } from 'react'
 import { themeContext } from '../../Context'
@@ -44,20 +44,24 @@ const Projects = () => {
         <span className='my' style={{color:darkMode?"white":""}}>My</span>
         <span className='pro'>Projects</span>
         
-        <motion.div  ref={ref} animate={isMobile?{}:animation} style={{height:'64vh'}}>
+        <motion.div  ref={ref} animate={isMobile?null:animation} style={{height:'64vh'}}>
         
         <div style={{position: 'relative',left: '-33rem'}} className='p1'>
-
-            <Procards emoji={candidate} heading={'Candidate Assessment'} detail={'Candidate assessment is java web application used to take assesment of candidates based on OCEAN model. It is using java servlets for server side activities, JDBC for storing and handling database and HTML/CSS for web design. It is working on three panels as Admin, HR and Candidates each of them having their own tasks.'}></Procards>
+            <a href='https://github.com/cgaurav18/Candidate_Assesment/tree/master' style={{color:darkMode?'white':'black'}}>
+           
+            <Procards emoji={candidate} heading={'Candidate Assessment'} detail={'Candidate assessment is java web application used to take assesment of candidates based on OCEAN model. It is using java servlets for server side activities, JDBC for storing and handling database and HTML/CSS for web design. It is working on three panels as Admin, HR and Candidates each of them having their own tasks.'}
+            ></Procards></a>
         </div>
         
 
         <div style={{position:'relative',left:'-9rem'}} className='p2'>
-          <Procards emoji={inv} heading={'Inventory Management'} detail={"Web based solution that solves the complex task of tracking and controlling inventory. This comprehensive system enables real-time monitoring of stock levels, and optimized inventory management. It's features makes it an invaluable tool for business seeking efficient inventory management."}></Procards>
+        <a href='https://github.com/cgaurav18/Inventory_Management/tree/master' style={{color:darkMode?'white':'black'}}>
+          <Procards emoji={inv} heading={'Inventory Management'} detail={"Web based solution that solves the complex task of tracking and controlling inventory. This comprehensive system enables real-time monitoring of stock levels, and optimized inventory management. It's features makes it an invaluable tool for business seeking efficient inventory management."}></Procards></a>
         </div>
 
         <div style={{position:'relative',left:'15rem'}} className='p3'>
-          <Procards emoji={doc} heading={"Interpretation of doctor's prescription"} detail={"It is very handy solution for recognition of doctor prescription to fill the gap of misunderstanding between the chemists and doctors. It is an android app made up using machine learning algorithms to recognize the handwritten text and converts it into text. It fulfills the need of an hour in healthcare sector."}></Procards>
+          <a href='https://github.com/cgaurav18/Codeclause-Payment_Gateway_Integration/tree/master' style={{color:darkMode?'white':'black'}}>
+          <Procards emoji={doc} heading={"Payment Gateway Integration"} detail={"The primary objective of this project was to integrate a reliable and efficient payment gateway into diverse e-commerce platforms, thereby facilitating hassle-free payment processing. The payment gateway integration solution offers a robust and secure channel for monetary transactions."}></Procards></a>
         </div>
         
         </motion.div>

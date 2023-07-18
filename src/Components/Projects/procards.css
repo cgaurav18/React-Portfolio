@@ -25,6 +25,7 @@
     transform: scale(1.4);
     margin-bottom: 1rem;
     margin-top: 2rem;
+    height: 35%;
 }
 
 @media screen and (max-width: 480px){

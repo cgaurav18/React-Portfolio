@@ -11,9 +11,9 @@ const Footer = () => {
         <div className='f-content'>
             <span>chvngaurav@gmail.com</span>
             <div className='f-icons'>
-                <Insta color="white" size="3rem"/>
-                <LinkedIn color="white" size="3rem"/>
-                <Github color="white" size="3rem"/>
+            <a href='https://instagram.com/cgaurav18?igshid=MzNlNGNkZWQ4Mg=='><Insta color="white" size="3rem"/></a>
+                <a href='https://www.linkedin.com/in/gaurav-chavan-15127b216'><LinkedIn color="white" size="3rem"/></a>
+                <a href='https://github.com/cgaurav18'><Github color="white" size="3rem"/></a>
 
             </div>
         </div>
